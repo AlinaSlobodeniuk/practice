@@ -14,8 +14,3 @@
 
 // alert(result);
 
-const str = 'string not starting with capital';
-
-const newStr = str[0].toUpperCase() + 
-
-console.log(newStr) не завершине
