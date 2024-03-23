@@ -104,4 +104,93 @@
 //   console.log(calculateTotal(3));
 
 
+// const calculator ={
+//     read(a,b) {
+//         this.a = a;
+//         this.b =b;
+//     },A
+//     sum() {
+//         return !this.a || !this.b ? false : this.a + this.b;
+//     },
+//     mult() {
+//         return this.a *this.b;
+//     }
+// };
+// calculator.read(2,2);
+// console.log("calculator:", calculator)
+
+
+// Практичне заняття 23.03
+
+
+// Напишіть ф-цію calcTotalPrice(stones, stonesName),
+// яка приймає масив об'єктів і
+// Рядок з назвою каменю.
+// Функція повертає загальну вартість каменів
+// з ​​таким ім'ям
+
+// const stones = [
+// { name: "Смарагд", price: 1300, quantity: 4 },
+// { name: "Діамант", price: 2700, quantity: 6 },
+// { name: "Сапфір", price: 400, quantity: 7},
+// { name: "Щебінь", price: 150, quantity: 100 },
+// ];
+
+// const calcTotalPrice = (stones, stonesName) => {
+// for ( const stone of stones){
+
+//     if(stone.name === stonesName){
+// return stone.price * stone.quantity;
+    
+// }
+// }
+// return `No find`
+// }
+// calcTotalPrice(stones, "Смарагд")
+
+//Напишіть дві функції
+//makeProduct(name, price, callback) - приймає
+//ім'я та ціну товару, а також callback.
+//Функція створює об'єкт товару, додаючи йому унікальний
+//ідентифікатор як id і викликає callback
+//Передаючи йому створений об'єкт.
+//showProduct(product) - коллбек приймаючий об'єкт
+//продукту і логірующий їх у консоль
+
+// const makeProduct = (name, price, callback) => {
+// const product = {
+//     name,
+//     price,
+//     id: Math.random(),
+// };
+// callback(product);
+// };
+
+// const showProduct = product => {
+//     console.log(product)
+// };
+
+// makeProduct("iPhone", 1000, showProduct);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
