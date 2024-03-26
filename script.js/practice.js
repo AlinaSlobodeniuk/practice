@@ -50,7 +50,9 @@
 // console.log(getElementWidth("60px", "12px", "8.5px")); // 101
 // console.log(getElementWidth("200px", "0px", "0px")); // 200
 
+
 // Модуль 2
+
 
 // function checkPassword(password) {
 //     const correctPassword = "jqueryismyjam";
@@ -60,6 +62,7 @@
 //   console.log(checkPassword("r3actsux"));
 //   console.log(checkPassword("angul4r1sl1f3"));
 //   console.log(checkPassword("jqueryismyjam"));
+
 
 
 // function isNumberInRange(start, end, number) {
@@ -104,6 +107,87 @@
 //   console.log(calculateTotal(3));
 
 
+
+// function calculateTotal(number) {
+//     let sum = 0;
+//     for (let i = 0; i <= number; i += 1){
+//         // console.log(i);
+//       sum += 1 * i;
+//     }
+//    return sum;
+//   }
+
+//   console.log(calculateTotal(24));
+//   console.log(calculateTotal(18));
+//   console.log(calculateTotal(7));
+//   console.log(calculateTotal(0));
+//   console.log(calculateTotal(1));
+
+
+
+// function calculateEvenTotal(number) {
+//   let sum = 0;
+// for (let i = 0; i <= number; i += 1) {
+//   if ( i % 2 === 0) {
+//     sum += i;
+//   }
+// };
+//   return sum;
+// };
+
+// console.log(calculateEvenTotal(1)); //0
+// console.log(calculateEvenTotal(3));//2
+// console.log(calculateEvenTotal(7));//12
+// console.log(calculateEvenTotal(18));//90
+// console.log(calculateEvenTotal(27));//182
+
+
+// const start = 17;
+// const end = 25;
+// let number = 0;
+// for (let i = start; i <= end; i++) {
+//   if (i % 5 === 0) {
+//     number = i;
+//    console.log(i);
+//     break;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Практичне заняття 23.03
+
+
 // const calculator ={
 //     read(a,b) {
 //         this.a = a;
@@ -119,8 +203,6 @@
 // calculator.read(2,2);
 // console.log("calculator:", calculator)
 
-
-// Практичне заняття 23.03
 
 
 // Напишіть ф-цію calcTotalPrice(stones, stonesName),
@@ -173,38 +255,8 @@
 // makeProduct("iPhone", 1000, showProduct);
 
 
-// function calculateTotal(number) {
-//     let sum = 0;
-//     for (let i = 0; i <= number; i += 1){
-//         // console.log(i);
-//       sum += 1 * i;
-//     }
-//    return sum;
-   
-//   }
 
-//   console.log(calculateTotal(24));
-//   console.log(calculateTotal(18));
-//   console.log(calculateTotal(7));
-//   console.log(calculateTotal(0));
-//   console.log(calculateTotal(1));
-
-function calculateEvenTotal(number) {
-  let sum = 0;
-for (let i = 0; i < number; i += 1) {
-  if ( i % 2) {
-    console.log
-    sum += i;
-  }
-return i;
-};
-  
-}
-// console.log(calculateEvenTotal(1)); //0
-// console.log(calculateEvenTotal(3));//2
-// console.log(calculateEvenTotal(7));//12
-// console.log(calculateEvenTotal(18));//90
-console.log(calculateEvenTotal(27));//182
+// Модуль 2 автоперевірки
 
 
 
