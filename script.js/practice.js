@@ -173,6 +173,39 @@
 // makeProduct("iPhone", 1000, showProduct);
 
 
+// function calculateTotal(number) {
+//     let sum = 0;
+//     for (let i = 0; i <= number; i += 1){
+//         // console.log(i);
+//       sum += 1 * i;
+//     }
+//    return sum;
+   
+//   }
+
+//   console.log(calculateTotal(24));
+//   console.log(calculateTotal(18));
+//   console.log(calculateTotal(7));
+//   console.log(calculateTotal(0));
+//   console.log(calculateTotal(1));
+
+function calculateEvenTotal(number) {
+  let sum = 0;
+for (let i = 0; i < number; i += 1) {
+  if ( i % 2) {
+    console.log
+    sum += i;
+  }
+return i;
+};
+  
+}
+// console.log(calculateEvenTotal(1)); //0
+// console.log(calculateEvenTotal(3));//2
+// console.log(calculateEvenTotal(7));//12
+// console.log(calculateEvenTotal(18));//90
+console.log(calculateEvenTotal(27));//182
+
 
 
 
