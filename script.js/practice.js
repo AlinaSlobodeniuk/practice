@@ -153,7 +153,242 @@
 //   }
 // }
 
+// task-1.js
 
+// function makeTransaction(quantity, pricePerDroid, customerCredits){
+//   const totalPrice = quantity * pricePerDroid;
+//   if (customerCredits < totalPrice) {
+//     return `Insufficient funds!`;
+//   } else {
+//     return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+//   };
+// };
+
+// console.log(makeTransaction(5, 3000, 23000)); // "You ordered 5 droids worth 15000 credits!"
+// console.log(makeTransaction(3, 1000, 15000)); // "You ordered 3 droids worth 3000 credits!"
+// console.log(makeTransaction(10, 5000, 8000)); // "Insufficient funds!"
+// console.log(makeTransaction(8, 2000, 10000)); // "Insufficient funds!"
+// console.log(makeTransaction(10, 500, 5000)); // "You ordered 10 droids worth 5000 credits!"
+
+
+// task-2.js
+
+// function formatMessage(message, maxLength){
+//   if (message.length <= maxLength) {
+//     return message;
+//   } else {
+//     return message.slice(0, maxLength) + '...';
+//   }
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
+// console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
+// console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
+// task-3.js
+
+// function checkForSpam(message){
+//   const newMessage = message.toLowerCase();
+//   if (newMessage.includes("spam")) {
+//     return true;
+//   } else if(newMessage.includes("sale")) {
+//     return true;
+//   } else{
+//     return false;
+//   }
+// };
+
+// console.log(checkForSpam("Latest technology news")); // false
+// console.log(checkForSpam("JavaScript weekly newsletter")); // false
+// console.log(checkForSpam("Get best sale offers now!")); // true
+// console.log(checkForSpam("Amazing SalE, only tonight!")); // true
+// console.log(checkForSpam("Trust me, this is not a spam message")); // true
+// console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
+// console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+
+// task-4.js
+
+// function getShippingCost(country){
+//   let price;
+//   switch (country) {
+//     case "China":
+//       price = 100;
+//       return `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//       case "Chile":
+//       price = 250;
+//       return `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//       case "Australia":
+//       price = 170;
+//       return `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//       case "Jamaica":
+//       price = 120;
+//       return `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//       default:
+//        return "Sorry, there is no delivery to your country";
+//   }
+// };
+
+// console.log(getShippingCost("Australia")); // "Shipping to Australia will cost 170 credits"
+// console.log(getShippingCost("Germany")); // "Sorry, there is no delivery to your country"
+// console.log(getShippingCost("China")); // "Shipping to China will cost 100 credits"
+// console.log(getShippingCost("Chile")); // "Shipping to Chile will cost 250 credits"
+// console.log(getShippingCost("Jamaica")); // "Shipping to Jamaica will cost 120 credits"
+// console.log(getShippingCost("Sweden")); // "Sorry, there is no delivery to your country"
+
+
+//  Модуль 3
+
+
+// function getSlice(array, value) {
+//   if (array.indexOf(value) === -1) {
+//     return [];
+//   } else {
+//     return array.slice(0, array.indexOf(value) + 1);
+//   }
+// };
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly"));
+// //["Mango", "Poly"]
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Ajax"));
+// //["Mango", "Poly", "Ajax"]
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Mango"));
+// //["Mango"]
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Jacob"));
+// //[]
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Casey"));
+// //[]
+
+
+
+// function createArrayOfNumbers(min, max) {
+//   const array = [];
+//    for (let i = min; i <= max; i++) {
+//      array.push(i);
+//    }
+//    return array;
+//  };
+
+//  console.log(createArrayOfNumbers(1, 3));
+//  console.log(createArrayOfNumbers(14, 17));
+//  console.log(createArrayOfNumbers(29, 34));
+//  
+ 
+
+// function calculateTotalPrice(order) {
+//   let totalPrice = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+//     totalPrice += order[i];
+//   };
+//   return totalPrice;
+// };
+// console.log(calculateTotalPrice([12, 85, 37, 4]));//138
+// console.log(calculateTotalPrice([164, 48, 291]));//503
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));//1116
+
+
+// function getEvenNumbers(start, end) {
+//   const array = [];
+//  for (let i = start; i <= end; i++) {
+//   if (i % 2 === 0) {
+//     array.push(i);
+//   } 
+//  }
+//  return array;
+// };
+
+// console.log(getEvenNumbers(2, 5));//[2, 4]
+// console.log(getEvenNumbers(3, 11));//[4, 6, 8, 10]
+// console.log(getEvenNumbers(6, 12));//[6, 8, 10, 12]
+// console.log(getEvenNumbers(8, 8));//[8]
+// console.log(getEvenNumbers(7, 7));//[]
+
+
+// function checkStorage(storage, item) {
+// return storage.includes(item.toLowerCase()) ? `${item.toLowerCase()} is available to order!` : "Sorry! We are out of stock!";
+// }
+
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pear"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pEAr"));
+// console.log(checkStorage(["apple", "plum", "pear"], "orange"));
+// console.log(checkStorage(["apple", "plum", "pear"], "carrot"));
+
+
+
+// function getCommonElements(array1, array2) {
+//   newArray = [];
+//   for (let i = 0; i <= array1.length; i++) {
+//     if (array2.includes(array1[i])) {
+//       newArray.push(array1[i]);
+//     };
+//   };
+// return newArray;
+// };
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));//[2]
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));//[1, 2]
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));//[12, 27, 3]
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));//[10, 30, 40]
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));//[]
+
+
+// task-1.js
+
+
+//  const slugify = function(title){
+// return slug = title.toLowerCase().split(" ").join("-");
+// };
+
+// console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
+// console.log(slugify("English for developer")); // "english-for-developer"
+// console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+
+
+// task-2.js
+
+
+// const makeArray = function(firstArray, secondArray, maxLength){
+//   return firstArray.concat(secondArray).slice(0, maxLength);
+// }
+
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
+
+
+// task-3.js
+
+
+// const filterArray = function(numbers, value){
+//   let array = [];
+//  for (const number of numbers) {
+//    if (number > value) {
+//      array.push(number);
+//    };
+//  };
+//  return array;
+// };
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 
 
 
