@@ -545,16 +545,66 @@
 // console.log(profile.getInfo()); // "Marco has 320 active hours!"
 
 
+// 5 модуль
 
 
+// function deliverPizza(pizzaName) {
+//     return `Delivering ${pizzaName} pizza.`;
+//   };
+  
+//   function makePizza(pizzaName) {
+//     return `Pizza ${pizzaName} is being prepared, please wait...`;
+//   };
+  
+//   function makeMessage(pizzaName, callback) {
+//     return callback();
+//   };
+
+// console.log(makeMessage("Royal Grand", makePizza));
+//    //"Pizza Royal Grand is being prepared, please wait..."
+//   console.log(makeMessage("Ultracheese", deliverPizza));
+//   //"Delivering Ultracheese pizza."
 
 
+// function filterArray(numbers, value) {
+//     let newArray = [];
+    
+//   numbers.forEach(function(number) {
+    
+//      if (number > value) {
+//         newArray.push(number);
+//       };
+//   });
+    
+//     return newArray;
+
+   
+    
+//   };
+// console.log(filterArray([1, 2, 3, 4, 5], 3));  //[4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4));  //[5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); //[] 
+// console.log(filterArray([12, 24, 8, 41, 76], 38));//[41, 76]  
+// console.log(filterArray([12, 24, 8, 41, 76], 20));//[24, 41, 76]  
 
 
+  function changeEven(numbers, value) {
+    const numberArray = [];
+   
+      numbers.forEach(number => {
+        if (number % 2 === 0) {
+            numberArray.push(number + value);
+        } else {
+            numberArray.push(number);
+        }
+      });
+     return numberArray;
+  }
 
-
-
-
+  console.log(changeEven([1, 2, 3, 4, 5], 10));//[1, 12, 3, 14, 5]
+  console.log(changeEven([2, 8, 3, 7, 4, 6], 10));//[12, 18, 3, 7, 14, 16]
+  console.log( changeEven([17, 24, 68, 31, 42], 100));//[17, 124, 168, 31, 142]
+  console.log(changeEven([44, 13, 81, 92, 36, 54], 100));//[144, 13, 81, 192, 136, 154]
 
 
 
