@@ -588,27 +588,54 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 20));//[24, 41, 76]  
 
 
-  function changeEven(numbers, value) {
-    const numberArray = [];
+  // function changeEven(numbers, value) {
+  //   const numberArray = [];
    
-      numbers.forEach(number => {
-        if (number % 2 === 0) {
-            numberArray.push(number + value);
-        } else {
-            numberArray.push(number);
-        }
-      });
-     return numberArray;
-  }
+  //     numbers.forEach(number => {
+  //       if (number % 2 === 0) {
+  //           numberArray.push(number + value);
+  //       } else {
+  //           numberArray.push(number);
+  //       }
+  //     });
+  //    return numberArray;
+  // }
 
-  console.log(changeEven([1, 2, 3, 4, 5], 10));//[1, 12, 3, 14, 5]
-  console.log(changeEven([2, 8, 3, 7, 4, 6], 10));//[12, 18, 3, 7, 14, 16]
-  console.log( changeEven([17, 24, 68, 31, 42], 100));//[17, 124, 168, 31, 142]
-  console.log(changeEven([44, 13, 81, 92, 36, 54], 100));//[144, 13, 81, 192, 136, 154]
-
-
+  // console.log(changeEven([1, 2, 3, 4, 5], 10));//[1, 12, 3, 14, 5]
+  // console.log(changeEven([2, 8, 3, 7, 4, 6], 10));//[12, 18, 3, 7, 14, 16]
+  // console.log( changeEven([17, 24, 68, 31, 42], 100));//[17, 124, 168, 31, 142]
+  // console.log(changeEven([44, 13, 81, 92, 36, 54], 100));//[144, 13, 81, 192, 136, 154]
 
 
+//   const players = [
+//     { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//     { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//     { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//     { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+//   ];
+ 
+//   const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+   
+//     return total + (player.playtime / player.gamesPlayed);
+//   },0);
+  
+// console.log(totalAveragePlaytimePerGame);//1023
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
