@@ -1025,13 +1025,11 @@
 // Модуль 6
 
 // class Car {
-
-// static maxPrice = 50000;
-  
+//   static maxPrice = 50000;
 //   #price;
 
 //   constructor(params) {
-//     this.#price = params.price ?? Car.price <= this.maxPrice;
+//     this.#price = params.price;
 //   }
 
 //   get price() {
@@ -1039,9 +1037,14 @@
 //   }
 
 //   set price(newPrice) {
-//       this.#price = newPrice;
+//     if (newPrice <= Car.maxPrice) {
+//         this.#price = newPrice;
+//     }
+  
 //   }
 // }
+
+
 
 // const audi = new Car({ price: 35000 });
 // console.log(audi.price); // 35000
@@ -1053,21 +1056,6 @@
 // console.log(audi.price); // 49000
 
 
-
-//Напишіть дві функції
-// letMeSeeYourName(callback) - запитує ім'я користувача
-//через prompt та викликає callback функцію
-//greet(name) - коллбек, що приймає ім'я і логірує в консоль
-//Рядок "Привіт <name>"
-//Реалізуй перевірку, що prompt не порожній
-
-
-
-const letMessageYourName = (callback) => {
-  prompt
-};
-
-const greet = (name) => {};
 
 
 
